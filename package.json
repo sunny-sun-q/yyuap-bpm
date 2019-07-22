@@ -1,0 +1,51 @@
+{
+  "name": "yyuap-bpm",
+  "version": "0.3.05",
+  "description": "tinper-bee bpm component",
+  "main": "./lib/index.js",
+  "scripts": {
+    "dev": "uba server --port=5171",
+    "dist": "uba build",
+    "build": "rm -rf lib && rm -rf build && babel src -d lib --no-comments",
+    "bundle": "webpack --progress --mode=development  && webpack --progress -p --output-filename yyuap-bpm.min.js"
+  },
+  "keywords": [
+    "yyuap",
+    "yyuap-bpm",
+    "bpm",
+    "tinper-bee"
+  ],
+  "author": {
+    "name": "Kvkens",
+    "email": "yueming@yonyou.com"
+  },
+  "bugs": {
+    "url": "https://github.com/tinper-acs/yyuap-bpm/issues"
+  },
+  "homepage": "https://github.com/tinper-acs/yyuap-bpm#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinper-acs/yyuap-bpm.git"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "yyuap-ref": "^1.x.x"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "tinper-bee": "^1.5.4",
+    "uba": "4.0.3",
+    "uba-server-mock": "2.0.2",
+    "uba-server-proxy": "2.0.3",
+    "yyuap-ref": "1.1.5"
+  }
+}
